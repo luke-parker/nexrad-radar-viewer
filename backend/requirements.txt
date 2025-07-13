@@ -1,7 +1,8 @@
 fastapi
 uvicorn
-pyart
+arm-pyart
 nexradaws
 numpy
 matplotlib
 pillow
+uvicorn
