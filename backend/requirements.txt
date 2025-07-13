@@ -5,4 +5,4 @@ nexradaws
 numpy
 matplotlib
 pillow
-uvicorn
+fastapi[standard]
