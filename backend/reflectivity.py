@@ -36,14 +36,15 @@ def get_reflectivity_data_for_station(station='KTLX', tilt=0):
     return process_scan(conn, latest_scan, tilt, station)
 
 
-# Returns 10 scans, using every 5th scan
+# Returns 10 most recent scans
 def get_reflectivity_timeline_for_station(station='KTLX', tilt=0):
     conn = nexradaws.NexradAwsInterface()
     dt = datetime.datetime.utcnow()
 
     results = conn.get_avail_scans(dt.year, dt.month, dt.day, station)
     results = [r for r in results if r.key.endswith("V06")]
-    recent_scans = results[-50::5][-10:]
+    recent_scans = results[-10:]
+    # recent_scans = results[-50::5][-10:]
 
     timeline = []
     for scan in recent_scans:
