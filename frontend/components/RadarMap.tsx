@@ -514,10 +514,6 @@ const RadarMap = () => {
                 <div className="w-4 h-3 bg-green-500 mr-2 rounded"></div>
                 <span className="text-white">Light</span>
               </div>
-              {/* <div className="flex items-center">
-                <div className="w-4 h-3 bg-blue-500 mr-2 rounded"></div>
-                <span className="text-white">Snow/Ice</span>
-              </div> */}
             </div>
           </div>
         </div>
