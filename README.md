@@ -5,7 +5,7 @@
 
 ## 🧭 Summary
 
-This is a full-stack web platform designed to visualize **NEXRAD Level II radar reflectivity**. Data is pulled from the NEXRAD AWS Open Data archives, processed by a python backend, and rendered over a map via a Next.js frontend. My aim was to go with a full-stack/balanced approach with efficient backend processing and an appealing frontend.
+This is a full-stack web app designed to visualize **NEXRAD Level II radar reflectivity**. Data is pulled from the NEXRAD AWS Open Data archives, processed by a python backend, and rendered over a map via a Next.js frontend. My aim was to go with a full-stack/balanced approach with efficient backend processing and an appealing frontend.
 
 Features
 - Access real time reflectivity data from any NEXRAD station
