@@ -18,6 +18,8 @@ For frontend: `cd frontend && npm install && npm run dev`
 
 For backend: `cd backend && pip install -r requirements.txt && fastapi run`
 
+Initial load will take a bit since there isn't any pre-processing.
+
 ## ⚙️ Tech Specs/Design Decisions
 
 ### Frontend (Next.js + Leaflet)
