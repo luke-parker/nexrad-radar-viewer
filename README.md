@@ -14,6 +14,7 @@ Features
 - Time slider for showing multiple recent scans in an animation
 
 ## Setup
+Start up both frontend and backend w/ the commands below. The backend should be running on port 8000.
 For frontend: `cd frontend && npm install && npm run dev`
 
 For backend: `cd backend && pip install -r requirements.txt && fastapi run`
