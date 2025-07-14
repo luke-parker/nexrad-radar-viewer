@@ -42,7 +42,7 @@ For a prod setup:
 - Improved caching infrastructure, using an indexed relational db for metadata lookup, Redis for keeping recent scans hot, and s3 buckets for long-term storage and CDN
 
 
-## 🧪 With More Time
+## With More Time
 
 There's a lot more I'd do with this project given more time. Some of the main ones:
 
