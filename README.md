@@ -42,7 +42,7 @@ FastAPI python server which uses the `nexradaws` library to pull NEXRAD Level 2 
 - **Rasterization**: Used pyart to convert polar reflectivity data into rasterized images w/ color coded reflectivity values (10 dBZ threshold)
 
 For a prod setup:
-- Use a pre-processing pipeline where data is downloaded from AWS and processed ahead of time, drastically speeding up rendering times on the frontend (downloads and pyart's `read_nexrad_archive` and `grid_from_radars` functions are expensive) for viewing new stations/tilts
+- Use a pre-processing pipeline where data is downloaded from AWS and processed asynchronously ahead of time, drastically speeding up rendering times on the frontend (downloads and pyart's `read_nexrad_archive` and `grid_from_radars` functions are expensive) for viewing new stations/tilts
 - Improved caching infrastructure, using an indexed relational db for metadata lookup, Redis for keeping recent scans hot, and s3 buckets for long-term storage and CDN
 - Support for serving rasterized images via a vector tile approach
 
